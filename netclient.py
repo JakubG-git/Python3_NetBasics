@@ -1,6 +1,6 @@
 import socket
 def Main():
-    host = '127.0.0.1'
+    host = socket.gethostname()
     port = 5002
     s = socket.socket()
     s.connect((host,port))
